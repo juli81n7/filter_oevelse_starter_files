@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(255, 249, 231);
+  padding: 2rem;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.8rem;
+  margin: 0;
+  margin-left: 1rem;
+  color: rgb(1, 59, 1);
+  cursor: pointer;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+li {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  list-style-type: none;
+  color: rgb(1, 59, 1);
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.shelf {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+button {
+  text-decoration: none;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: rgb(255, 249, 231);
+  border: 1px solid rgb(1, 59, 1);
+  color: rgb(1, 59, 1);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(1, 59, 1);
+  color: rgb(255, 160, 44);
+  transition: 0.4s ease;
+}
+
+button.active {
+  background-color: rgb(255, 171, 69);
+  color: rgb(1, 59, 1);
+}
